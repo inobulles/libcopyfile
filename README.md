@@ -8,6 +8,14 @@ Temporary you say?
 Yes, Temporary™! I'd like this to be reimplemented (still keeping with a similar API to copyfile and likely incorporating a lot of Apple's code) into a generic filesystem manipulation library, something along the lines of `libfsutils`, which includes other useful stuff, like recursive versions of a lot of the POSIX FS functions, and perhaps even some filesystem creation functionality.
 But that's not for right now 😉
 
+## Building
+
+With [Bob the Builder](https://github.com/inobulles/bob) installed:
+
+```console
+bob test install
+```
+
 ## Copyright stuff
 
 Copyright over the source is held by Apple, Inc. (previously Apple Computer, Inc.), and is licensed under the Apple Public Source License Version 2.0.
