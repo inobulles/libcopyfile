@@ -33,7 +33,7 @@ File.list("src")
 var install = {
 	"libcopyfile.a":  "%(Meta.prefix())/lib/libcopyfile.a",
 	"libcopyfile.so": "%(Meta.prefix())/lib/libcopyfile.so",
-	"copyfile.h":     "%(Meta.prefix())/lib/copyfile.h",
+	"copyfile.h":     "%(Meta.prefix())/include/copyfile.h",
 }
 
 // testing
