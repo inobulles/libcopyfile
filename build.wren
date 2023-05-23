@@ -31,9 +31,9 @@ File.list("src")
 // installation map
 
 var install = {
-	"libcopyfile.a":  "%(Meta.prefix())/lib/libcopyfile.a",
-	"libcopyfile.so": "%(Meta.prefix())/lib/libcopyfile.so",
-	"copyfile.h":     "%(Meta.prefix())/include/copyfile.h",
+	"libcopyfile.a":  "lib/libcopyfile.a",
+	"libcopyfile.so": "lib/libcopyfile.so",
+	"copyfile.h":     "include/copyfile.h",
 }
 
 // testing
