@@ -1,0 +1,28 @@
+# This Source Form is subject to the terms of the AQUA Software License, v. 1.0.
+# Copyright (c) 2024 Aymeric Wibo
+
+import bob
+
+# C compilation.
+
+let obj = Cc([
+	"-fPIC", "-std=c99",
+	"-Wall", "-Wextra", "-Werror"
+]).compile(["src/copyfile.c"])
+
+# Create static & dynamic libraries.
+
+let archive = Linker([]).archive(obj)
+let dyn_lib = Linker(["-shared"]).link(obj)
+
+# Installation map.
+
+install = {
+	archive: "lib/libcopyfile.a",
+	dyn_lib: "lib/libcopyfile.so",
+	"src/copyfile.h": "include/copyfile.h",
+}
+
+# Default runner.
+
+run = none
