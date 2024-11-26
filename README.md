@@ -1,7 +1,7 @@
 # libcopyfile
 
-Library for copying files on aquaBSD, ported from an old version of [macOS' copyfile](https://opensource.apple.com/source/copyfile/copyfile-66).
-It was modified to function correctly on aquaBSD, but because of differences between macOS & aquaBSD, not everything works as expected!
+Library for copying files on FreeBSD, ported from an old version of [macOS' copyfile](https://opensource.apple.com/source/copyfile/copyfile-66).
+It was modified to function correctly on FreeBSD, but because of differences between macOS & FreeBSD, not everything works as expected!
 
 Previously, this port was found in [`aquabsd-pkg-repo`](https://github.com/inobulles/aquabsd-pkg-repo), but to work better as a singular dependency for use in other projects, I've temporarily split this out into a separate repo.
 Temporary you say?
@@ -13,7 +13,7 @@ But that's not for right now 😉
 With [Bob the Builder](https://github.com/inobulles/bob) installed:
 
 ```console
-bob test install
+bob install
 ```
 
 ## Copyright stuff
