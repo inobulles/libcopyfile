@@ -21,6 +21,9 @@
 
 import bob
 
+assert Platform.os() != "Darwin", "libcopyfile is already provided by the system; you should not be using this."
+assert Platform.os() == "FreeBSD", "This libcopyfile reimplementation has only been validated on FreeBSD."
+
 # C compilation.
 
 let obj = Cc([
